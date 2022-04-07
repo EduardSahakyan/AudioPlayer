@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AudioPlayer"
 include ':app'
+include ':data'
+include ':domain'
+include ':presentation'
+include ':navigation'
