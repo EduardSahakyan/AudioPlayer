@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/presentation/src/main/res/layout/audio_item.xml" value="0.264" />
+        <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/presentation/src/main/res/layout/fragment_audio_list.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
