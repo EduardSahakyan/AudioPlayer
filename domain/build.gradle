@@ -33,6 +33,7 @@ dependencies {
 
     //kotlin
     implementation 'androidx.core:core-ktx:1.7.0'
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
 
     //materials
     implementation 'androidx.appcompat:appcompat:1.4.1'
