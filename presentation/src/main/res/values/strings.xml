@@ -1,0 +1,7 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_player">Music Player</string>
+    <string name="song_name">Song Name</string>
+    <string name="_def_time">3:11</string>
+</resources>
