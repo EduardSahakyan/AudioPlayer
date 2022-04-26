@@ -1,5 +1,6 @@
 package com.example.presentation.audiolist
 
+import android.graphics.Bitmap
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,11 +12,15 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import java.io.ByteArrayOutputStream
 
 class AudioListViewModel(private val getAudioListUseCase: GetAudioListUseCase): ViewModel() {
 
     private val _audioList = MutableLiveData<List<AudioModel>>()
     val audioList: LiveData<List<AudioModel>> = _audioList
+
+    private val _selectedTrack = MutableLiveData<Int>(-1)
+    val selectedTrack: LiveData<Int> = _selectedTrack
 
     fun getAudioList(){
         getAudioListUseCase()
@@ -30,6 +35,16 @@ class AudioListViewModel(private val getAudioListUseCase: GetAudioListUseCase): 
             .flowOn(Dispatchers.Main)
             .launchIn(viewModelScope)
 
+    }
+
+    fun getTrackName(position: Int): String = audioList.value?.get(position)?.name ?: ""
+
+    fun getTrackBitmap(position: Int): Bitmap = audioList.value?.get(position)?.logo!!
+
+    fun getAudioListSize(): Int = audioList.value?.size ?: 0
+
+    fun updateSelectedTrack(position: Int){
+        _selectedTrack.value = position
     }
 
 }

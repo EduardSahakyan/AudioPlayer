@@ -10,6 +10,8 @@
         <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/data/src/main/res/drawable/ic_music.xml" value="0.121" />
         <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/presentation/src/main/res/layout/audio_item.xml" value="0.264" />
         <entry key="..\:/Users/Eduard/AndroidStudioProjects/AudioPlayer/presentation/src/main/res/layout/fragment_audio_list.xml" value="0.22826086956521738" />
+        <entry key="presentation/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="presentation/src/main/res/layout/fragment_audio_list.xml" value="0.25" />
       </map>
     </option>
   </component>

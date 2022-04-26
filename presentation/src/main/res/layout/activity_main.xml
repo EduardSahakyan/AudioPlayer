@@ -6,4 +6,4 @@
     android:name="com.example.presentation.audiolist.AudioListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".common.MainActivity" />
+    tools:context="com.example.presentation.common.MainActivity" />

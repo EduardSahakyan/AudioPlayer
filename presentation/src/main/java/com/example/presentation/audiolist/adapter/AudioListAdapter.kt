@@ -16,7 +16,7 @@ class AudioListAdapter: RecyclerView.Adapter<AudioViewHolder>() {
 
     var audioList = listOf<AudioModel>()
 
-    var onPlayClickListener: ((String, String, ByteArray) -> Unit)? = null
+    var onPlayClickListener: ((Int) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AudioViewHolder {
         val binding = AudioItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -30,7 +30,7 @@ class AudioListAdapter: RecyclerView.Adapter<AudioViewHolder>() {
             val byteArrayOutputStream = ByteArrayOutputStream()
             audioList[position].logo.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
             val byteArray = byteArrayOutputStream.toByteArray()
-            onPlayClickListener?.invoke(audioList[position].audioData, audioList[position].name, byteArray)
+            onPlayClickListener?.invoke(position)
         }
     }
 
